@@ -15,9 +15,17 @@ highlight posNum ctermfg=4  guifg=#d19a66
 syn match class ".\w*\((\)\@="
 highlight class ctermfg=4  guifg=#61AFEF
 
-" highlight names with contains numbers
+" highlight names which contains numbers
 syn match main "\v(\a)\w*\d"
 highlight main ctermfg=4  guifg=#E06C75
+
+
+"both regrex works
+" import \zs.*\ze
+" \v(^import\s+)@<=.*;
+" import 
+syn match import1 "\v(^import\s+)@<=.*;"
+highlight import1 ctermfg=4  guifg=#E5C07B
 
 " import 
 syn match import "import*"
@@ -35,7 +43,7 @@ highlight javaStorageClass ctermfg=4  guifg=#C678DD
 syntax match ClassName display '\<\([A-Z][a-z0-9]*\)\+\>'
 syntax match ClassName display '\.\@<=\*'
 highlight link ClassName Identifier
-highlight ClassName ctermfg=4  guifg=#E5C07B
+"highlight ClassName ctermfg=4  guifg=#E5C07B
 
 " Just some special color, why not?  
 syn match print "System.out."
@@ -45,7 +53,7 @@ highlight print ctermfg=4  guifg=#E5C07B
 highlight Constant ctermfg=4  guifg=#E5C07B
 
 " class
-syn match javaClassDecl2 "class\>"
+syn match javaClassDecl2 " class\> "
 highlight javaClassDecl2 ctermfg=4  guifg=#C678DD
 
 " package
