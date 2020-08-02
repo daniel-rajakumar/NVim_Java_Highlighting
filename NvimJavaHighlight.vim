@@ -32,10 +32,11 @@ highlight importName ctermfg=4  guifg=#E5C07B
 syn match importWord "import "
 highlight importWord ctermfg=4  guifg=#C678DD
 
+" package name
 syn match packageName "\v(^package\s+)@<=.*;"
 highlight packageName ctermfg=4  guifg=#E5C07B
 
-" import 
+" package 
 syn match packageWord "package "
 highlight packageWord ctermfg=4  guifg=#C678DD
 
@@ -66,77 +67,78 @@ highlight javaClassDecl2 ctermfg=4  guifg=#C678DD
 " package
 highlight javaExternal ctermfg=4  guifg=#C678DD
 
-
 "if else switch
-javaConditional
+highlight javaConditional ctermfg=4  guifg=#C678DD
 
 "while for do 
-javaRepeat
+highlight javaRepeat ctermfg=4  guifg=#C678DD
 
 "true flase
-javaBoolean
+highlight javaBoolean ctermfg=4  guifg=#d19a66
+
 
 " null
-javaConstant
+syn match null "\v[ =]null[; ]"
+highlight null ctermfg=4  guifg=#d19a66
+
 
 " this super
-javaTypedef		
-
+highlight javaTypedef ctermfg=4  guifg=#E5C07B
+		
 " var new instanceof
-javaOperator	
-
+highlight javaOperator ctermfg=4  guifg=#C678DD
+	
 " return
-javaStatement
+highlight javaStatement ctermfg=4  guifg=#C678DD
 
 " static synchronized transient volatile final strictfp serializable
-javaStorageClass
+highlight javaStorageClass ctermfg=4  guifg=#C678DD
 
 "throw try catch finally
-javaExceptions
+highlight javaExceptions ctermfg=4  guifg=#C678DD
 
 " assert
-javaAssert
+highlight javaAssert ctermfg=4  guifg=#C678DD
 
 " synchronized throws
-javaMethodDecl
+highlight javaMethodDecl ctermfg=4  guifg=#E06C75
 
 " extends implements interface
-javaClassDecl
-
+highlight javaClassDecl ctermfg=4  guifg=#E06C75
 
 " interface 
-javaClassDecl
+highlight javaClassDecl ctermfg=4  guifg=#C678DD
 
 " break continue skipwhite
-javaBranch
+highlight javaBranch ctermfg=4  guifg=#C678DD
 
 " public protected private abstract
-javaScopeDecl
+highlight javaScopeDecl ctermfg=4  guifg=#C678DD
+
 
 """"""""""""""""""""""""""""""""""""""'
 " java 9...
 " module transitive
-javaModuleStorageClass
+highlight javaModuleStorageClass ctermfg=4  guifg=#C678DD
 
 
 " open requires exports opens uses provides 
-javaModuleStmt
+highlight javaModuleStmt ctermfg=4  guifg=#E5C07B
+
 
 " to with
-javaModuleExternal
+highlight javaModuleExternal ctermfg=4  guifg=#E06C75
 
 
 """""""""""""""""""""""""""""""""""""""""
 " lambda
-javaLambdaDef
-
-
+highlight javaLambdaDef ctermfg=4  guifg=#56B6C2
 
 
 """"""""""""""""""""""""""""""""""""""""""
 " clone equals finalize getClass hashCode
 " notify notifyAll toString wait
-javaLangObject
+highlight javaLangObject ctermfg=4  guifg=#E5C07B
 
 
 
