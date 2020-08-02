@@ -20,16 +20,24 @@ syn match main "\v(\a)\w*\d"
 highlight main ctermfg=4  guifg=#E06C75
 
 
-"both regrex works
+"all regrex works
+" /^import (+);$/mg 
 " import \zs.*\ze
 " \v(^import\s+)@<=.*;
-" import 
-syn match import1 "\v(^import\s+)@<=.*;"
-highlight import1 ctermfg=4  guifg=#E5C07B
+" imported packages 
+syn match importName "\v(^import\s+)@<=.*;"
+highlight importName ctermfg=4  guifg=#E5C07B
 
 " import 
-syn match import "import*"
-highlight import ctermfg=4  guifg=#C678DD
+syn match importWord "import "
+highlight importWord ctermfg=4  guifg=#C678DD
+
+syn match packageName "\v(^package\s+)@<=.*;"
+highlight packageName ctermfg=4  guifg=#E5C07B
+
+" import 
+syn match packageWord "package "
+highlight packageWord ctermfg=4  guifg=#C678DD
 
 "ex: int, double, char
 highlight javaType ctermfg=4  guifg=#C678DD
@@ -37,7 +45,6 @@ highlight javaType ctermfg=4  guifg=#C678DD
 "ex: static, throws
 highlight javaStorageClass ctermfg=4  guifg=#C678DD
 
-"highlight javaOperator ctermfg=4  guifg=#C678DD
 
 "class name... basically starts with caps letter
 syntax match ClassName display '\<\([A-Z][a-z0-9]*\)\+\>'
@@ -64,12 +71,15 @@ highlight javaExternal ctermfg=4  guifg=#C678DD
 
 
 
+":TODO s 
+"imported pack name 
+"syn match pack "import .*"
+"highlight pack ctermfg=4  guifg=#E5C07B
+
+
+"highlight javaOperator ctermfg=4  guifg=#C678DD
+
 
 "syntax match Operator display ' *->'
 "highlight Operator ctermfg=4  guifg=#d19a66
 
-
-":TODO
-"imported pack name 
-"syn match pack "import .*"
-"highlight pack ctermfg=4  guifg=#E5C07B
