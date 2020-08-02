@@ -50,7 +50,7 @@ highlight javaStorageClass ctermfg=4  guifg=#C678DD
 syntax match ClassName display '\<\([A-Z][a-z0-9]*\)\+\>'
 syntax match ClassName display '\.\@<=\*'
 highlight link ClassName Identifier
-"highlight ClassName ctermfg=4  guifg=#E5C07B
+highlight ClassName ctermfg=4  guifg=#E5C07B
 
 " Just some special color, why not?  
 syn match print "System.out."
@@ -65,6 +65,83 @@ highlight javaClassDecl2 ctermfg=4  guifg=#C678DD
 
 " package
 highlight javaExternal ctermfg=4  guifg=#C678DD
+
+
+"if else switch
+javaConditional
+
+"while for do 
+javaRepeat
+
+"true flase
+javaBoolean
+
+" null
+javaConstant
+
+" this super
+javaTypedef		
+
+" var new instanceof
+javaOperator	
+
+" return
+javaStatement
+
+" static synchronized transient volatile final strictfp serializable
+javaStorageClass
+
+"throw try catch finally
+javaExceptions
+
+" assert
+javaAssert
+
+" synchronized throws
+javaMethodDecl
+
+" extends implements interface
+javaClassDecl
+
+
+" interface 
+javaClassDecl
+
+" break continue skipwhite
+javaBranch
+
+" public protected private abstract
+javaScopeDecl
+
+""""""""""""""""""""""""""""""""""""""'
+" java 9...
+" module transitive
+javaModuleStorageClass
+
+
+" open requires exports opens uses provides 
+javaModuleStmt
+
+" to with
+javaModuleExternal
+
+
+"""""""""""""""""""""""""""""""""""""""""
+" lambda
+javaLambdaDef
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""
+" clone equals finalize getClass hashCode
+" notify notifyAll toString wait
+javaLangObject
+
+
+
+
+
 
 
 
