@@ -11,7 +11,7 @@ Steps to active:
 
 
 Steps to disactive: 
-0) Remove the java.vim file (command: $ rm ~/.config/nvim/syntax/java.vim)
+0) Remove the java.vim file ```bash command: $ rm ~/.config/nvim/syntax/java.vim```
 
 
 
