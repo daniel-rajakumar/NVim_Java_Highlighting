@@ -117,7 +117,7 @@ execute "highlight null ctermfg=4  guifg=".orange
 
 
 " this super
-execute "highlight javaTypedef ctermfg=4  guifg=".yellow
+execute "highlight javaTypedef ctermfg=4  guifg=".purple
 		
 " var new instanceof
 execute "highlight javaOperator ctermfg=4  guifg=".purple
