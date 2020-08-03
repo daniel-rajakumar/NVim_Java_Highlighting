@@ -5,13 +5,14 @@ Java file (before vs after)
 
 
 Steps to active:
+
 0) Go to this cloned repo.
-1) Then type this command: $ mv java.vim ~/.config/nvim/syntax/
+1) Then type this command: ```$ mv java.vim ~/.config/nvim/syntax/```
 2) Have fun
 
 
 Steps to disactive: 
-0) Remove the java.vim file ```bash command: $ rm ~/.config/nvim/syntax/java.vim```
+0) Remove the java.vim file bash command: ```$ rm ~/.config/nvim/syntax/java.vim```
 
 
 
