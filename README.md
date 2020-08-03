@@ -20,7 +20,7 @@ Steps to disactive:
 
 
 - This syntax highlighting is based on Visual-Studio-Code's onedark java syntax highlighting.  
-- BTW this code colorcoded based on onedark theme. You may change the colors according on your will.
+- BTW this code is color-coded based on onedark theme. You may change the colors according to your will.
 
 
 
