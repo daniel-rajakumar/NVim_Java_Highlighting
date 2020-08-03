@@ -12,12 +12,15 @@ Steps to active:
 
 
 Steps to disactive: 
+
 0) Remove the java.vim file bash command: ```$ rm ~/.config/nvim/syntax/java.vim```
 
 
 
-This syntax highlighting is based on Visual-Studio-Code's onedark java syntax highlighting.  
-BTW this code colorcoded based on onedark theme. You may change the colors according on your will.
+
+- This syntax highlighting is based on Visual-Studio-Code's onedark java syntax highlighting.  
+- BTW this code colorcoded based on onedark theme. You may change the colors according on your will.
+
 
 
 Note: 
