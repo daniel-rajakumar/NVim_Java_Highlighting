@@ -1,3 +1,4 @@
+
 " note do not change the order...
 " some of them are overridding privous regrex 
 
@@ -6,8 +7,21 @@
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+" gruvbox (dark)
+"let orange = "#d65d0e" "special color for numbers
+"let black = "#282828"
+"let red = "#cc241d"
+"let green = "#98971a"
+"let yellow = "#d79921"
+"let blue = "#458588"
+"let purple = "#b16286"
+"let cyan = "#689d6a"
+"let white = "#a89984"
+
+
 " one dark
-let orange = "#d19a66"
+let orange = "#d19a66" "special color for numbers
 let black = "#282c34"
 let red = "#E06C75"
 let green = "#98c379"
@@ -18,6 +32,8 @@ let cyan = "#56B6C2"
 let white = "#ABB2BF"
 
 
+
+" you may chage the color according to your will :)
 
 
 " main color (for left over words)
@@ -41,6 +57,7 @@ execute "highlight main ctermfg=4  guifg=".red
 " /^import (+);$/mg 
 " import \zs.*\ze
 " \v(^import\s+)@<=.*;
+
 " imported packages 
 syn match importName "\v(^import\s+)@<=.*;"
 execute "highlight importName ctermfg=4  guifg=".yellow
