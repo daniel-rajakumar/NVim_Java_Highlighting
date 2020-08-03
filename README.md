@@ -15,7 +15,13 @@ source $HOME/NVim_Java_Highlighting/NVim_Java_Highlighting.vim
 
 
 Note: 
-    this is a very basic syntax highlighting. but it does it job right :)  
-    have fun java programming guys! :)
+    This is only tested on: 
+    - Arch linux
+    - Neovim (hopefully its work on vim)
+
+
+
+this is a very basic syntax highlighting. but it does it job right :)  
+have fun java programming guys! :)
 
 
