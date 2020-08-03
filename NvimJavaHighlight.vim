@@ -1,6 +1,11 @@
+
+
+
 " note do not change the order...
 " some of them are overridding privous regrex 
 
+"this code made with build-in syntax regrex(and key words), and with some custome regrex(and
+"key words)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " main color (for left over words)
@@ -144,21 +149,5 @@ highlight javaLangObject ctermfg=4  guifg=#E5C07B
 
 
 
-
-
-
-
-
-
-":TODO s 
-"imported pack name 
-"syn match pack "import .*"
-"highlight pack ctermfg=4  guifg=#E5C07B
-
-
-"highlight javaOperator ctermfg=4  guifg=#C678DD
-
-
-"syntax match Operator display ' *->'
-"highlight Operator ctermfg=4  guifg=#d19a66
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
