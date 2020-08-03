@@ -1,6 +1,3 @@
-
-
-
 " note do not change the order...
 " some of them are overridding privous regrex 
 
@@ -8,21 +5,36 @@
 "key words)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" one dark
+let orange = "#d19a66"
+let black = "#282c34"
+let red = "#E06C75"
+let green = "#98c379"
+let yellow = "#E5C07B"
+let blue = "#61AFEF"
+let purple = "#C678DD"
+let cyan = "#56B6C2"
+let white = "#ABB2BF"
+
+
+
+
 " main color (for left over words)
 syn match main "\w"
-highlight main ctermfg=4  guifg=#E06C75
+execute "highlight main ctermfg=4  guifg=".red
 
 " numbers
 syn match posNum "\d"
-highlight posNum ctermfg=4  guifg=#d19a66
+execute "highlight posNum ctermfg=4  guifg=".orange
 
 " method names()
 syn match class ".\w*\((\)\@="
-highlight class ctermfg=4  guifg=#61AFEF
+execute "highlight class ctermfg=4  guifg=".blue
 
-" highlight names which contains numbers
+"execute "highlight names which contains numbers
 syn match main "\v(\a)\w*\d"
-highlight main ctermfg=4  guifg=#E06C75
+execute "highlight main ctermfg=4  guifg=".red
 
 
 "all regrex works
@@ -31,119 +43,119 @@ highlight main ctermfg=4  guifg=#E06C75
 " \v(^import\s+)@<=.*;
 " imported packages 
 syn match importName "\v(^import\s+)@<=.*;"
-highlight importName ctermfg=4  guifg=#E5C07B
+execute "highlight importName ctermfg=4  guifg=".yellow
 
 " import 
 syn match importWord "import "
-highlight importWord ctermfg=4  guifg=#C678DD
+execute "highlight importWord ctermfg=4  guifg=".purple
 
 " package name
 syn match packageName "\v(^package\s+)@<=.*;"
-highlight packageName ctermfg=4  guifg=#E5C07B
+execute "highlight packageName ctermfg=4  guifg=".yellow
 
 " package 
 syn match packageWord "package "
-highlight packageWord ctermfg=4  guifg=#C678DD
+execute "highlight packageWord ctermfg=4  guifg=".purple
 
 "ex: int, double, char
-highlight javaType ctermfg=4  guifg=#C678DD
+execute "highlight javaType ctermfg=4  guifg=".purple
 
 "ex: static, throws
-highlight javaStorageClass ctermfg=4  guifg=#C678DD
+execute "highlight javaStorageClass ctermfg=4  guifg=".purple
 
 
 "class name... basically starts with caps letter
 syntax match ClassName display '\<\([A-Z][a-z0-9]*\)\+\>'
 syntax match ClassName display '\.\@<=\*'
 highlight link ClassName Identifier
-highlight ClassName ctermfg=4  guifg=#E5C07B
+execute "highlight ClassName ctermfg=4  guifg=".yellow
 
 " Just some special color, why not?  
 syn match print "System.out."
-highlight print ctermfg=4  guifg=#E5C07B
+execute "highlight print ctermfg=4  guifg=".yellow
 
 "objects (ex: String) 
-highlight Constant ctermfg=4  guifg=#E5C07B
+execute "highlight Constant ctermfg=4  guifg=".yellow
 
 " class
 syn match javaClassDecl2 " class\> "
-highlight javaClassDecl2 ctermfg=4  guifg=#C678DD
+execute "highlight javaClassDecl2 ctermfg=4  guifg=".purple
 
 " package
-highlight javaExternal ctermfg=4  guifg=#C678DD
+execute "highlight javaExternal ctermfg=4  guifg=".purple
 
 "if else switch
-highlight javaConditional ctermfg=4  guifg=#C678DD
+execute "highlight javaConditional ctermfg=4  guifg=".purple
 
 "while for do 
-highlight javaRepeat ctermfg=4  guifg=#C678DD
+execute "highlight javaRepeat ctermfg=4  guifg=".purple
 
 "true flase
-highlight javaBoolean ctermfg=4  guifg=#d19a66
+execute "highlight javaBoolean ctermfg=4  guifg=".orange
 
 
 " null
 syn match null "\v[ =]null[; ]"
-highlight null ctermfg=4  guifg=#d19a66
+execute "highlight null ctermfg=4  guifg=".orange
 
 
 " this super
-highlight javaTypedef ctermfg=4  guifg=#E5C07B
+execute "highlight javaTypedef ctermfg=4  guifg=".yellow
 		
 " var new instanceof
-highlight javaOperator ctermfg=4  guifg=#C678DD
+execute "highlight javaOperator ctermfg=4  guifg=".purple
 	
 " return
-highlight javaStatement ctermfg=4  guifg=#C678DD
+execute "highlight javaStatement ctermfg=4  guifg=".purple
 
 " static synchronized transient volatile final strictfp serializable
-highlight javaStorageClass ctermfg=4  guifg=#C678DD
+execute "highlight javaStorageClass ctermfg=4  guifg=".purple
 
 "throw try catch finally
-highlight javaExceptions ctermfg=4  guifg=#C678DD
+execute "highlight javaExceptions ctermfg=4  guifg=".purple
 
 " assert
-highlight javaAssert ctermfg=4  guifg=#C678DD
+execute "highlight javaAssert ctermfg=4  guifg=".purple
 
 " synchronized throws
-highlight javaMethodDecl ctermfg=4  guifg=#E06C75
+execute "highlight javaMethodDecl ctermfg=4  guifg=".red
 
 " extends implements interface
-highlight javaClassDecl ctermfg=4  guifg=#E06C75
+execute "highlight javaClassDecl ctermfg=4  guifg=".red
 
 " interface 
-highlight javaClassDecl ctermfg=4  guifg=#C678DD
+execute "highlight javaClassDecl ctermfg=4  guifg=".purple
 
 " break continue skipwhite
-highlight javaBranch ctermfg=4  guifg=#C678DD
+execute "highlight javaBranch ctermfg=4  guifg=".purple
 
 " public protected private abstract
-highlight javaScopeDecl ctermfg=4  guifg=#C678DD
+execute "highlight javaScopeDecl ctermfg=4  guifg=".purple
 
 
 """"""""""""""""""""""""""""""""""""""'
 " java 9...
 " module transitive
-highlight javaModuleStorageClass ctermfg=4  guifg=#C678DD
+execute "highlight javaModuleStorageClass ctermfg=4  guifg=".purple
 
 
 " open requires exports opens uses provides 
-highlight javaModuleStmt ctermfg=4  guifg=#E5C07B
+execute "highlight javaModuleStmt ctermfg=4  guifg=".yellow
 
 
 " to with
-highlight javaModuleExternal ctermfg=4  guifg=#E06C75
+execute "highlight javaModuleExternal ctermfg=4  guifg=".red
 
 
 """""""""""""""""""""""""""""""""""""""""
 " lambda
-highlight javaLambdaDef ctermfg=4  guifg=#56B6C2
+execute "highlight javaLambdaDef ctermfg=4  guifg=".cyan
 
 
 """"""""""""""""""""""""""""""""""""""""""
 " clone equals finalize getClass hashCode
 " notify notifyAll toString wait
-highlight javaLangObject ctermfg=4  guifg=#E5C07B
+execute "highlight javaLangObject ctermfg=4  guifg=".yellow
 
 
 
